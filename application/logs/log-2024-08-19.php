@@ -1,0 +1,65 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2024-08-19 08:58:02 --> The session cookie data did not match what was expected. This could be a possible hacking attempt.
+ERROR - 2024-08-19 08:58:08 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-19 08:58:10 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 08:58:14 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-19 08:58:17 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-19 08:58:26 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-19 09:06:51 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\paysabil\system\libraries\Log.php 72
+ERROR - 2024-08-19 09:35:06 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\paysabil\system\libraries\Log.php 72
+ERROR - 2024-08-19 09:35:07 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\paysabil\system\libraries\Log.php 72
+ERROR - 2024-08-19 09:55:53 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-19 09:55:55 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:55:58 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/js
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/js
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/css
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:55:59 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:00 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:00 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:01 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/css
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/js
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/js
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:02 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/css
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/js
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/js
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:14 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:15 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:16 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/js
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/js
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/css
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:17 --> 404 Page Not Found --> wakaf/images
+ERROR - 2024-08-19 09:56:23 --> 404 Page Not Found --> dashboard/assets
