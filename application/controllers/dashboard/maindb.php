@@ -7,13 +7,13 @@ class Maindb extends MY_Controller {
 	{
 		parent::__construct();
 		
-	  //if($this->session->userdata('group_id')!=1) redirect('profails/profail');
+	//   if($this->session->userdata('group_id')!=1) redirect('profails/profail');
 	}
 	
 		
 	function pageone()
 	{
-		//if($this->session->userdata('logged_in')==FALSE) redirect('profails/profail'); // nanti onkan bahagian ni
+		// if($this->session->userdata('logged_in')==FALSE) redirect('profails/profail'); // nanti onkan bahagian ni
 		
 		$data['content'] = 'dashboard/pageone';
 		$this->load->view('template/index',$data);
@@ -21,7 +21,7 @@ class Maindb extends MY_Controller {
 	
 	function mainpage()
 	{
-		//if($this->session->userdata('logged_in')==FALSE) redirect('profails/profail'); // nanti onkan bahagian ni
+		// if($this->session->userdata('logged_in')==FALSE) redirect('profails/profail'); // nanti onkan bahagian ni
 		
 		$data['content']		= 'mainpage';
 		$this->load->view('template/index',$data);
