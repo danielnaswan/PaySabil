@@ -1,0 +1,24 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2024-08-21 02:49:16 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:49:31 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:49:33 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:49:33 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:49:34 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:49:54 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-21 02:50:00 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-21 02:57:09 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:10 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:11 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:12 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:12 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:17 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:19 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-21 02:57:20 --> 404 Page Not Found --> Laporan/assets
+ERROR - 2024-08-21 02:57:21 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:23 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:25 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:30 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 02:57:31 --> 404 Page Not Found --> dashboard/assets
+ERROR - 2024-08-21 03:58:32 --> 404 Page Not Found --> dashboard/home
+ERROR - 2024-08-21 03:58:38 --> 404 Page Not Found --> dashboard/home
