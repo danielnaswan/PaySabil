@@ -20,7 +20,7 @@ class Mapply extends CI_Model
 	
 	function insert($data)
 	{
-		//return $insert_id;
+		//return $insert_id;ds
 	}
 	
 	function update($tempahan_id,$data)
