@@ -8,8 +8,8 @@
                                   <footer class="footer fixed-bottom">
                                     <div class="d-sm-flex justify-content-center justify-content-sm-between">
 						              <!--<span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022 <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash</a>. All rights reserved.</span>-->	
-						              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022 <a href="https://uthm.edu.my/en//" target="_blank">uthm.edu.my</a>. All rights reserved.</span>
-						              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">u.p.a & p.t.m <i class="mdi mdi-heart text-danger"></i></span>
+						              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024 <a href="https://uthm.edu.my/en//" target="_blank">uthm.edu.my</a>. All rights reserved.</span>
+						              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">hal ehwal pelajar<i class="mdi mdi-heart text-danger"></i></span>
 						            </div>
                                   </footer>
                                   <!-- partial -->
