@@ -41,8 +41,7 @@
 $route['default_controller'] = 'home/login';
 $route['404_override'] = '';
 
-// login for staffs
-$route['login']['GET'] = 'Auth/LoginController/index';
+
 
 
 /* End of file routes.php */
