@@ -6,7 +6,7 @@ class Maindb extends MY_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		
+		// $this->load->model('Authentication');
 	//   if($this->session->userdata('group_id')!=1) redirect('profails/profail');
 	}
 	

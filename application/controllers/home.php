@@ -24,7 +24,7 @@ class Home extends MY_Controller {
 		$this->load->library('form_validation');
 		$this->load->library('session');
 		$this->load->model('StaffModel');
-		
+		// $this->load->model('Authentication');
 	}
 	
     function index(){
@@ -42,7 +42,6 @@ class Home extends MY_Controller {
 		$this->form_validation->set_rules(	'form-password','(Katalaluan)','required');		
 		
 		if ($this->form_validation->run() == FALSE):
-	
 			$this->load->view('loginpage');
 		    
 		else:
@@ -53,7 +52,17 @@ class Home extends MY_Controller {
 			$staff = new StaffModel;
 			$result = $staff->loginUser($data);
 			if ($result != FALSE):
-				echo "login siswa praktikal";
+				// echo "login siswa praktikal";
+				$auth_staff = [
+					'staff_id' => $result->STAFF_ID,
+					'name' => $result->NAME,
+					'password' => $result->PASSWORD
+				];
+				$this->session->set_userdata('authenticated', 1);
+				$this->session->set_userdata('auth_user', $auth_staff);
+
+				// $this->session->set_flashdata('notis', '<p class="success success-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');
+				redirect(base_url('dashboard/maindb/mainpage'));
 			else:
 				$this->session->set_flashdata('notis', '<p class="alert alert-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');	
 			 	$this->output->set_header('refresh:0; url='.base_url());

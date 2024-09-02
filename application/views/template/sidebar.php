@@ -19,8 +19,8 @@
                  <!--change to offline or busy as needed-->
               </div>
               <div class="nav-profile-text d-flex ms-0 mb-3 flex-column">
-                <span class="font-weight-semibold mb-1 mt-2 text-center">Diploma Sains Komputer</span>                           
-                <span class="small font-weight-light pt-1 text-center">UITM Segamat</span><!--text-secondary icon-sm text-center -->
+                <span class="font-weight-semibold mb-1 mt-2 text-center"><?php echo $this->session->userdata('auth_user')['name']; ?></span>                           
+                <span class="small font-weight-light pt-1 text-center"><?php echo $this->session->userdata('auth_user')['staff_id']; ?></span><!--text-secondary icon-sm text-center -->
               </div>
             </a>
           </li>
