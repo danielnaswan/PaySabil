@@ -171,7 +171,7 @@
                 <a class="nav-link" href="#">Welcome </a>
               </li>
               <li class="nav-item nav-logout d-none d-md-block">
-                <button class="btn btn-sm btn-danger">SMART</button>
+                <button class="btn btn-sm btn-danger">Pay Sabil</button>
               </li>
              <!-- <li class="nav-item nav-profile dropdown d-none d-md-block">
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -196,9 +196,9 @@
                   <i class="mdi mdi-home-circle"></i>
                 </a>
               </li>
-			  <li> 
-				  <?=anchor('home/logout','<i class="mdi mdi-logout" style="color:#FFFFFF;"></i>')?>
-			  </li>            
+			        <li> 
+				        <?=anchor('home/logout','<i class="mdi mdi-logout" style="color:#FFFFFF;"></i>')?>
+			        </li>            
               
             </ul>
             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
