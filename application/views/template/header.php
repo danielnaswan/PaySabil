@@ -197,7 +197,7 @@
                 </a>
               </li>
 			  <li> 
-				  <?=anchor('home/logout','<i class="mdi mdi-logout" style="color:#FFFFFF;"></i>')?>
+				  <?=anchor('LogoutController/logout','<i class="mdi mdi-logout" style="color:#FFFFFF;"></i>')?>
 			  </li>            
               
             </ul>

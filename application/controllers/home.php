@@ -25,7 +25,7 @@ class Home extends MY_Controller {
 	}
 	
     function index(){
-        // blah
+        echo "hello";
     }
 	
     
@@ -34,31 +34,31 @@ class Home extends MY_Controller {
 	{
 		$data = $this->setting;		
 		$this->form_validation->set_error_delimiters('<p class="alert alert-danger">', '</p>');
-                
+        
 		$this->form_validation->set_rules(	'form-username','(ID Pengguna)','required');
 		$this->form_validation->set_rules(	'form-password','(Katalaluan)','required');		
 		
 		if ($this->form_validation->run() == FALSE):
-	
+			
 			$this->load->view('loginpage');
-		    
+			
 		else:
-              $username   = $this->input->post('form-username');
-			  $password   = $this->input->post('form-password');   
-                
-               $level = "siswa"; 
+            $username   = $this->input->post('form-username');
+			$password   = $this->input->post('form-password');   
+            
+            $level = "siswa"; 
 					if($level === "siswa"): 
-		                if(($username === "daniel")&&($password === "1"))://pelajar  
-		                     //echo "login siswa praktikal";
-							 $data['content']	= 'mainpage';
-							 $this->load->view('template/index',$data);
-					   else:									
-						    $this->session->set_flashdata('notis', '<p class="alert alert-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');	
-			      			$this->output->set_header('refresh:0; url='.base_url());
-					   endif;
+						if(($username === "daniel")&&($password === "1"))://pelajar  
+		                    //echo "login siswa praktikal";
+							$data['content']	= 'mainpage';
+							$this->load->view('template/index',$data);
+						else:									
+							$this->session->set_flashdata('notis', '<p class="alert alert-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');	
+							$this->output->set_header('refresh:0; url='.base_url());
+						endif;
 					elseif($level === "staff")://staff 
 						echo "login pelajar";
-				endif;					
+					endif;					
 		endif;
 		}
 
