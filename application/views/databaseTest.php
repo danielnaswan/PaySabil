@@ -15,7 +15,7 @@
             <tbody>
                 <!-- Repeat this <tr> block for each student -->
                 <tr>
-                    <td class="NO_MATRIK">001</td>
+                    <td class="NO_MATRIK"><?php echo $test->NAMA; ?></td>
                     <td class="NAMA">John Doe</td>
                     <td>john.doe@example.com</td>
                     <td>Biotechnology</td>

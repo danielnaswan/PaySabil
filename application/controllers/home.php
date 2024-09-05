@@ -86,11 +86,11 @@ class Home extends MY_Controller {
 		}
 
 	
-	function logout()
-	{
-		$this->session->unset_userdata('auth_user');
-		$this->session->unset_userdata('authenticated');
-		$this->session->sess_destroy();
-		redirect('home/login','refresh');
-	}	
+// 	function logout()
+// 	{
+// 		$this->session->unset_userdata('auth_user');
+// 		$this->session->unset_userdata('authenticated');
+// 		$this->session->sess_destroy();
+// 		redirect('home/login','refresh');
+// 	}	
 }

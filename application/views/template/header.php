@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>SMART System</title>
+    <title>Pay Sabil System</title>
     <!-- plugins:css -->
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendors/mdi/css/materialdesignicons.min.css">
@@ -197,7 +197,8 @@
                 </a>
               </li>
 			        <li> 
-				        <?=anchor('home/logout','<i class="mdi mdi-logout" style="color:#FFFFFF;"></i>')?>
+				        <!-- <?=anchor('LogoutController/logout','<i class="mdi mdi-logout" style="color:#FFFFFF;"></i>')?> -->
+                  <a href="<?= base_url('LogoutController/logout') ?>"><i class="mdi mdi-logout" style="color:#FFFFFF;"></i></a>
 			        </li>            
               
             </ul>
