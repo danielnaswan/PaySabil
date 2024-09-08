@@ -51,19 +51,19 @@
             <div class="collapse" id="ui-laporan">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">                
-                   <a class="nav-link" href="<?php echo base_url();?>Laporan/hep/laporanA">Laporan HEP</a>
+                  <a class="nav-link" href="<?php echo base_url();?>Laporan/hep/laporanA">Laporan HEP</a>
                 </li>
                 <li class="nav-item">               
-                   <a class="nav-link" href="<?php echo base_url();?>Laporan/pku/laporanA">Laporan Pusat Kesihatan</a>
+                  <a class="nav-link" href="<?php echo base_url();?>Laporan/pku/laporanA">Laporan Pusat Kesihatan</a>
                 </li>
                 <li class="nav-item">                  
-                   <a class="nav-link" href="<?php echo base_url();?>Laporan/wakaf/laporanA">Laporan Wakaf Endowmen</a>
+                  <a class="nav-link" href="<?php echo base_url();?>Laporan/wakaf/laporanA">Laporan Wakaf Endowmen</a>
                 </li>
               </ul>
             </div>
           </li>
           
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-ststistik" aria-expanded="false" aria-controls="ui-ststistik">
               <i class="mdi mdi-table-large menu-icon"></i>
               <span class="menu-title">Statistik</span>
@@ -82,7 +82,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
         </ul>
         
       </nav>

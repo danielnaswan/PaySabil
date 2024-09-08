@@ -14,7 +14,7 @@ class DatabaseTest extends CI_Controller {
         // } else {
         //     echo "Connection failed!";
         // }
-
+        $data['test'] = $test;
         $data['content'] = 'databaseTest';
         $this->load->view('template/index',$data);
     }

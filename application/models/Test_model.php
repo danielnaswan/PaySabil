@@ -6,7 +6,8 @@ class Test_model extends CI_Model {
     }
 
     public function getData() {
-        $query = $this->db->query("SELECT * FROM PAYSABIL_STUDENT");
+        $this->db->select('*');
+        $query= $this->db->get('PAYSABIL_STUDENT');
         return $query->result();
     }
 }

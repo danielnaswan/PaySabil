@@ -13,10 +13,10 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Repeat this <tr> block for each student -->
+                <?php foreach($test as $rows): ?>
                 <tr>
-                    <td class="NO_MATRIK"><?php echo $test->NAMA; ?></td>
-                    <td class="NAMA">John Doe</td>
+                    <td class="NO_MATRIK"><?php echo $rows->NO_MATRIK; ?></td>
+                    <td class="NAMA"><?php echo $rows->NAMA; ?></td>
                     <td>john.doe@example.com</td>
                     <td>Biotechnology</td>
                     <td><span class="badge bg-warning">Pending</span></td>
@@ -25,7 +25,7 @@
                         <button class="btn btn-success btn-sm">Approve</button>
                     </td>
                 </tr>
-                <!-- End Repeat -->
+                <?php endforeach; ?>
             </tbody>
         </table>
     </div>
