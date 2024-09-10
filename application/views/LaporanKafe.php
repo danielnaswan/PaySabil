@@ -7,16 +7,16 @@
                     <th>No. Kafe</th>
                     <th>Nama Kafe</th>
                     <th>Lokasi</th>
-                    <th>Actions</th>
+                    <th>Transaksi</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach($cafe as $cafes): ?>
                     <tr>
                         <td><?php echo $cafes->NO_KAFE; ?></td>
-                        <td><?php echo $cafes->NAMA; ?></td>
+                        <td><?php echo $cafes->NAMA_KAFE; ?></td>
                         <td><?php echo $cafes->LOKASI; ?></td>
-                        <td><button class="btn btn-success">view</button></td>
+                        <td><a class="btn btn-success" href="<?php echo base_url();?>cafeController/transList">view</a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -24,4 +24,4 @@
     </div>
 </div>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

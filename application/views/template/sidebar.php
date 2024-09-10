@@ -51,13 +51,10 @@
             <div class="collapse" id="ui-laporan">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">                
-                  <a class="nav-link" href="<?php echo base_url();?>Laporan/hep/laporanA">Laporan HEP</a>
+                  <a class="nav-link" href="<?php echo base_url();?>cafeController/cafeList">Laporan Kafe</a>
                 </li>
                 <li class="nav-item">               
-                  <a class="nav-link" href="<?php echo base_url();?>Laporan/pku/laporanA">Laporan Pusat Kesihatan</a>
-                </li>
-                <li class="nav-item">                  
-                  <a class="nav-link" href="<?php echo base_url();?>Laporan/wakaf/laporanA">Laporan Wakaf Endowmen</a>
+                  <a class="nav-link" href="<?php echo base_url();?>Laporan/pku/laporanA">Laporan Pelajar</a>
                 </li>
               </ul>
             </div>

@@ -7,6 +7,7 @@ class CafeController extends CI_Controller
     {
         parent::__construct();
         $this->load->model('CafeModel');
+        $this->load->model('TransModel');
     }
 
     function index()
@@ -16,11 +17,17 @@ class CafeController extends CI_Controller
 
     function cafeList()
     {
-        // Use the loaded model to get the cafe list
         $data['cafe'] = $this->CafeModel->getCafeList();
 
-        // Load the LaporanKafe view and pass the data
         $data['content'] = 'LaporanKafe';
+        $this->load->view('template/index', $data);
+    }
+
+    function transList()
+    {   
+        $data['transaction'] = $this->TransModel->getTransaction(date('Y-m-d'));
+
+        $data['content'] = 'LaporanTransaksi';
         $this->load->view('template/index', $data);
     }
 }
