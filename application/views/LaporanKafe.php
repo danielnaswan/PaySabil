@@ -16,12 +16,14 @@
                         <td><?php echo $cafes->NO_KAFE; ?></td>
                         <td><?php echo $cafes->NAMA_KAFE; ?></td>
                         <td><?php echo $cafes->LOKASI; ?></td>
-                        <td><a class="btn btn-success" href="<?php echo base_url();?>cafeController/transList">view</a></td>
+                        <td>
+                            <a class="btn btn-success" href="<?php echo base_url();?>CafeController/transList/<?php echo $cafes->NAMA_KAFE; ?>">
+                                View
+                            </a>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
     </div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
