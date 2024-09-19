@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>SMART System</title>
+    <title>Pay Sabil System</title>
     <!-- plugins:css -->
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendors/mdi/css/materialdesignicons.min.css">
@@ -24,6 +24,7 @@
     <!-- kpza baru tambah 20/8/2022-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
     
     <!-- TAMBAH UNTUK TABLE 5/7/2022 tapi tak berjaya...............-->
 		    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">  
@@ -171,7 +172,7 @@
                 <a class="nav-link" href="#">Welcome </a>
               </li>
               <li class="nav-item nav-logout d-none d-md-block">
-                <button class="btn btn-sm btn-danger">SMART</button>
+                <button class="btn btn-sm btn-danger">Pay Sabil</button>
               </li>
              <!-- <li class="nav-item nav-profile dropdown d-none d-md-block">
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -196,9 +197,10 @@
                   <i class="mdi mdi-home-circle"></i>
                 </a>
               </li>
-			  <li> 
-				  <?=anchor('home/logout','<i class="mdi mdi-logout" style="color:#FFFFFF;"></i>')?>
-			  </li>            
+			        <li> 
+				        <!-- <?=anchor('LogoutController/logout','<i class="mdi mdi-logout" style="color:#FFFFFF;"></i>')?> -->
+                  <a href="<?= base_url('LogoutController/logout') ?>"><i class="mdi mdi-logout" style="color:#FFFFFF;"></i></a>
+			        </li>            
               
             </ul>
             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">

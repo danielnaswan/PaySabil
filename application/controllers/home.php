@@ -21,11 +21,14 @@ class Home extends MY_Controller {
 	{
 		parent::__construct();
 		//if($this->setting['online'] != 1) redirect('offline');
+		$this->load->library('form_validation');
+		$this->load->library('session');
+		$this->load->model('StaffModel');
 		
 	}
 	
     function index(){
-        // blah
+        $this->load->view('loginpage');
     }
 	
     
@@ -43,30 +46,51 @@ class Home extends MY_Controller {
 			$this->load->view('loginpage');
 		    
 		else:
-              $username   = $this->input->post('form-username');
-			  $password   = $this->input->post('form-password');   
-                
-               $level = "siswa"; 
-					if($level === "siswa"): 
-		                if(($username === "daniel")&&($password === "1"))://pelajar  
-		                     //echo "login siswa praktikal";
-							 $data['content']	= 'mainpage';
-							 $this->load->view('template/index',$data);
-					   else:									
-						    $this->session->set_flashdata('notis', '<p class="alert alert-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');	
-			      			$this->output->set_header('refresh:0; url='.base_url());
-					   endif;
-					elseif($level === "staff")://staff 
-						echo "login pelajar";
-				endif;					
+			$data = [
+				"staff_id" => $this->input->post('form_username'),
+				"password" => $this->input->post('form-password')
+			];
+			$staff = new StaffModel;
+			$result = $staff->loginUser($data);
+			if ($result != FALSE):
+				$auth_user = [
+					'staff_id' => $result->STAFF_ID,
+					'name' => $result->NAME,
+					'password' => $result->PASSWORD
+				];
+
+				$this->session->set_userdata('authenticated', 1);
+				$this->session->set_userdata('auth_user', $auth_user);
+				redirect(base_url('mainpage'));
+			else:
+				$this->session->set_flashdata('notis', '<p class="alert alert-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');	
+			 	$this->output->set_header('refresh:0; url='.base_url());
+			endif;
+            //   $username   = $this->input->post('form-username');
+			//   $password   = $this->input->post('form-password');   
+			//   $staff = new StaffModel;
+            //    $level = "siswa"; 
+			// 		if($level === "siswa"): 
+		    //             if(($username === "daniel")&&($password === "1"))://pelajar  
+		    //                  //echo "login siswa praktikal";
+			// 				 $data['content']	= 'mainpage';
+			// 				 $this->load->view('template/index',$data);
+			// 		   else:									
+			// 			    $this->session->set_flashdata('notis', '<p class="alert alert-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');	
+			//       			$this->output->set_header('refresh:0; url='.base_url());
+			// 		   endif;
+			// 		elseif($level === "staff")://staff 
+			// 			echo "login pelajar";
+			// 	endif;					
 		endif;
 		}
 
 	
-	function logout()
-	{
-		$this->session->unset_userdata('logged_in');
-		$this->session->sess_destroy();
-		redirect('home/login','refresh');
-	}	
+// 	function logout()
+// 	{
+// 		$this->session->unset_userdata('auth_user');
+// 		$this->session->unset_userdata('authenticated');
+// 		$this->session->sess_destroy();
+// 		redirect('home/login','refresh');
+// 	}	
 }

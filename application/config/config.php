@@ -18,6 +18,7 @@
 $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+// $config['base_url']	= 'localhost:8000';
 
 /*
 |--------------------------------------------------------------------------
@@ -274,8 +275,8 @@ $config['sess_storage'] 		= 'database';
 // [OB] additional config items: You can leave these as defaults for a standard session
 $config['sess_data_cookie'] 	= 'ci_session_data';
 $config['sess_database'] 		= 'default';
-$config['sess_timeout'] 		= 0; 
-$config['sess_destroy_on_timeout'] = FALSE; 
+$config['sess_timeout'] 		= 7200; 
+$config['sess_destroy_on_timeout'] = TRUE; 
 $config['sess_update_interval'] = 180; 
 $config['sess_gc_probability'] 	= 10; 
 $config['sess_http_only'] 		= FALSE; 

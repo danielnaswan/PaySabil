@@ -19,8 +19,8 @@
                  <!--change to offline or busy as needed-->
               </div>
               <div class="nav-profile-text d-flex ms-0 mb-3 flex-column">
-                <span class="font-weight-semibold mb-1 mt-2 text-center">Diploma Sains Komputer</span>                           
-                <span class="small font-weight-light pt-1 text-center">UITM Segamat</span><!--text-secondary icon-sm text-center -->
+                <span class="font-weight-semibold mb-1 mt-2 text-center"><?php echo $this->session->userdata('auth_user')['name']; ?></span>                           
+                <span class="small font-weight-light pt-1 text-center"><?php echo $this->session->userdata('auth_user')['staff_id']; ?></span><!--text-secondary icon-sm text-center -->
               </div>
             </a>
           </li>
@@ -51,19 +51,16 @@
             <div class="collapse" id="ui-laporan">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">                
-                   <a class="nav-link" href="<?php echo base_url();?>Laporan/hep/laporanA">Laporan HEP</a>
+                  <a class="nav-link" href="<?php echo base_url();?>cafeController/cafeList">Laporan Kafe</a>
                 </li>
                 <li class="nav-item">               
-                   <a class="nav-link" href="<?php echo base_url();?>Laporan/pku/laporanA">Laporan Pusat Kesihatan</a>
-                </li>
-                <li class="nav-item">                  
-                   <a class="nav-link" href="<?php echo base_url();?>Laporan/wakaf/laporanA">Laporan Wakaf Endowmen</a>
+                  <a class="nav-link" href="<?php echo base_url();?>Laporan/pku/laporanA">Laporan Pelajar</a>
                 </li>
               </ul>
             </div>
           </li>
           
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-ststistik" aria-expanded="false" aria-controls="ui-ststistik">
               <i class="mdi mdi-table-large menu-icon"></i>
               <span class="menu-title">Statistik</span>
@@ -82,7 +79,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
         </ul>
         
       </nav>
