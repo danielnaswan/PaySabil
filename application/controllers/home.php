@@ -65,23 +65,7 @@ class Home extends MY_Controller {
 			else:
 				$this->session->set_flashdata('notis', '<p class="alert alert-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');	
 			 	$this->output->set_header('refresh:0; url='.base_url());
-			endif;
-            //   $username   = $this->input->post('form-username');
-			//   $password   = $this->input->post('form-password');   
-			//   $staff = new StaffModel;
-            //    $level = "siswa"; 
-			// 		if($level === "siswa"): 
-		    //             if(($username === "daniel")&&($password === "1"))://pelajar  
-		    //                  //echo "login siswa praktikal";
-			// 				 $data['content']	= 'mainpage';
-			// 				 $this->load->view('template/index',$data);
-			// 		   else:									
-			// 			    $this->session->set_flashdata('notis', '<p class="alert alert-danger">ID / KATALALUAN tidak tepat, cuba lagi</p>');	
-			//       			$this->output->set_header('refresh:0; url='.base_url());
-			// 		   endif;
-			// 		elseif($level === "staff")://staff 
-			// 			echo "login pelajar";
-			// 	endif;					
+			endif;				
 		endif;
 		}
 
