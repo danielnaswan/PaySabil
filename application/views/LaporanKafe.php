@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h2 class="mb-4">Cafe Listings</h2>
+    <h2 class="mb-4">Senarai Kafe</h2>
     <div class="mb-4">
         <table class="table">
             <thead class="thead-dark">

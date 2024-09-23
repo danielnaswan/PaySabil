@@ -8,11 +8,12 @@
                 value="<?php echo isset($selected_date) ? $selected_date : date('Y-m-d'); ?>" />
         </div>
         <button type="submit" class="btn btn-primary mb-4">Cari Transaksi</button>
+        
     </form>
 
     <div class="mb-4">
         <table class="table">
-            <thead class="thead-dark">
+            <thead class="thead-dark ">
                 <tr>
                     <th>No. Transaksi</th>
                     <th>No. Matrik</th>
@@ -31,7 +32,12 @@
                             <td><?php echo $trans->NAMA; ?></td>
                             <td><?php echo $trans->NO_KAFE; ?></td>
                             <td><?php echo $trans->NAMA_KAFE; ?></td>
-                            <td><?php echo $trans->TARIKH_DIBELANJAKAN; ?></td>
+                            <td>
+                                <?php
+                                    $date = new DateTime($trans->TARIKH_DIBELANJAKAN);
+                                    echo $date->format('d/m/Y');
+                                ?>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>

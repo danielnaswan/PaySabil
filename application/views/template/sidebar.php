@@ -54,7 +54,7 @@
                   <a class="nav-link" href="<?php echo base_url();?>cafeController/cafeList">Laporan Kafe</a>
                 </li>
                 <li class="nav-item">               
-                  <a class="nav-link" href="<?php echo base_url();?>Laporan/pku/laporanA">Laporan Pelajar</a>
+                  <a class="nav-link" href="<?php echo base_url();?>StudentController/index">Laporan Pelajar</a>
                 </li>
               </ul>
             </div>
