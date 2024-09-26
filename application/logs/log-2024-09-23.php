@@ -66,3 +66,14 @@ ERROR - 2024-09-23 05:21:35 --> 404 Page Not Found --> CafeController/assets
 ERROR - 2024-09-23 05:21:44 --> 404 Page Not Found --> CafeController/assets
 ERROR - 2024-09-23 05:21:44 --> 404 Page Not Found --> CafeController/assets
 ERROR - 2024-09-23 05:21:48 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:43:33 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:43:34 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:43:35 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:43:37 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:43:38 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:43:51 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:48:26 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:48:31 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:48:35 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 05:48:38 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-23 06:00:12 --> 404 Page Not Found --> CafeController/assets

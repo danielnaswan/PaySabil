@@ -59,6 +59,28 @@
               </ul>
             </div>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-tambah" aria-expanded="false" aria-controls="ui-laporan">
+              <i class="mdi mdi-plus-outline menu-icon"></i>
+              <span class="menu-title">Tambah</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-tambah">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">                
+                  <a class="nav-link" href="<?php echo base_url();?>cafeController/addCafe">Kafe</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url();?>">
+              <i class="mdi mdi-qrcode menu-icon"></i>
+              <span class="menu-title">Kod QR</span>
+            </a>
+          </li>
           
           <!-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-ststistik" aria-expanded="false" aria-controls="ui-ststistik">

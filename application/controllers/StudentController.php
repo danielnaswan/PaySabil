@@ -38,4 +38,6 @@ class StudentController extends CI_Controller {
         $data['content'] = 'StudentRecord';
         $this->load->view('template/index', $data);
     }
+
+    
 }

@@ -8,12 +8,12 @@
                                   <footer class="footer fixed-bottom">
                                     <div class="d-sm-flex justify-content-center justify-content-sm-between">
 						              <!--<span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022 <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash</a>. All rights reserved.</span>-->	
-						              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024 <a href="https://uthm.edu.my/en//" target="_blank">uthm.edu.my</a>. All rights reserved.</span>
+				  	              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024 <a href="https://uthm.edu.my/en//" target="_blank">uthm.edu.my</a>. All rights reserved.</span>
 						              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">hal ehwal pelajar<i class="mdi mdi-heart text-danger"></i></span>
 						            </div>
                                   </footer>
                                   <!-- partial -->
-                               
+                              
                             <!-- plugins:js -->
                             <script src="<?=base_url()?>/assets/vendors/js/vendor.bundle.base.js"></script>
                             <!-- endinject -->
@@ -25,6 +25,8 @@
                             <script src="<?=base_url()?>/assets/vendors/flot/jquery.flot.categories.js"></script>
                             <script src="<?=base_url()?>/assets/vendors/flot/jquery.flot.fillbetween.js"></script>
                             <script src="<?=base_url()?>/assets/vendors/flot/jquery.flot.stack.js"></script>
+                            <script src="<?=base_url()?>/assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+                            <script src="<?=base_url()?>/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
                             <!-- End plugin js for this page -->
                             <!-- inject:js -->
                             <script src="<?=base_url()?>/assets/js/off-canvas.js"></script>
@@ -39,5 +41,3 @@
                           </body>
 
                           </html>
-
-         
