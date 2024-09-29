@@ -35,7 +35,7 @@ class StudentController extends CI_Controller {
             '2' => '2'
         );
 
-        $data['content'] = 'StudentRecord';
+        $data['content'] = 'LaporanPelajar';
         $this->load->view('template/index', $data);
     }
 
