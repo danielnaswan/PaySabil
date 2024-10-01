@@ -7,9 +7,14 @@
     <title>Pay Sabil System</title>
     <!-- plugins:css -->
 
+    <!-- Custom -->
+	  <link rel="stylesheet" href="<?= base_url("assets/custom/css/custom-style.css") ?>">
+    <link rel="stylesheet" href="<?= base_url("assets/custom/css/custom-modal.css") ?>">
+
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendors/bootstrap/css/bootstrap.min.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendors/jquery-bar-rating/css-stars.css" />

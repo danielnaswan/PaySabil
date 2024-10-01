@@ -1,45 +1,3 @@
-<div class="container mt-5">
-    <h2 class="mb-4">Senarai Kafe</h2>
-    <div class="mb-4">
-        <table class="table table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th>No. Kafe</th>
-                    <th>Nama Kafe</th>
-                    <th>Lokasi</th>
-                    <th>Transaksi</th>
-                    <th>Tindakan</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach($cafe as $cafes): ?>
-                    <tr>
-                        <td><?php echo $cafes->NO_KAFE; ?></td>
-                        <td><?php echo $cafes->NAMA_KAFE; ?></td>
-                        <td><?php echo $cafes->LOKASI; ?></td>
-                        <td>
-                            <a class="btn btn-success mdi mdi-eye-outline" href="<?php echo base_url();?>CafeController/transList/<?php echo $cafes->NAMA_KAFE; ?>">
-                                View
-                            </a>
-                        </td>
-                        <td>
-                            <button data-toggle="modal" data-target="#modalEdit" class="btn btn-primary mdi mdi-square-edit-outline">
-                                Sunting
-                            </button>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-1.12.0.js"></script>
-
-<!-- <?php
-    $this->load->view('modal-edit');
-?> -->
-
 <div id="modalEdit" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -137,5 +95,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-
-
