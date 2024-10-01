@@ -13,18 +13,18 @@
                 <label for="monthPicker">Pilih Bulan:</label>
                 <select class="form-control" name="monthPicker" id="monthPicker">
                     <option value="" disabled selected>-- Pilih Bulan --</option>
-                    <option value="January">Januari</option>
-                    <option value="Februari">Februari</option>
-                    <option value="Mac">Mac</option>
-                    <option value="April">April</option>
-                    <option value="Mei">Mei</option>
-                    <option value="Jun">Jun</option>
-                    <option value="Julai">Julai</option>
-                    <option value="Ogos">Ogos</option>
-                    <option value="September">September</option>
-                    <option value="Oktober">Oktober</option>
-                    <option value="November">November</option>
-                    <option value="Disember">Disember</option>
+                    <option value="1">Januari</option>
+                    <option value="2">Februari</option>
+                    <option value="3">Mac</option>
+                    <option value="4">April</option>
+                    <option value="5">Mei</option>
+                    <option value="6">Jun</option>
+                    <option value="7">Julai</option>
+                    <option value="8">Ogos</option>
+                    <option value="9">September</option>
+                    <option value="10">Oktober</option>
+                    <option value="11">November</option>
+                    <option value="12">Disember</option>
                 </select>
             </div>
 

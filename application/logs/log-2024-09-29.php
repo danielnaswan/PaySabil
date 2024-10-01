@@ -64,3 +64,5 @@ ERROR - 2024-09-29 06:22:53 --> 404 Page Not Found --> CafeController/assets
 ERROR - 2024-09-29 06:38:18 --> 404 Page Not Found --> CafeController/assets
 ERROR - 2024-09-29 08:22:59 --> Severity: Notice  --> Undefined variable: cafes C:\xampp5\htdocs\paysabil\application\views\modal-edit.php 10
 ERROR - 2024-09-29 08:22:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp5\htdocs\paysabil\application\views\modal-edit.php 10
+ERROR - 2024-09-29 09:41:19 --> 404 Page Not Found --> CafeController/assets
+ERROR - 2024-09-29 09:41:22 --> 404 Page Not Found --> CafeController/assets

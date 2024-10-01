@@ -27,11 +27,12 @@ class CafeController extends CI_Controller
     function transList($cafe)
     {   
         // $data['transaction'] = $this->TransModel->getTransaction(date('Y-m-d'));
-        $selected_date = $this->input->get('datePicker') ? $this->input->get('datePicker') : date('Y-m-d');
+        $selected_date = $this->input->get('datePicker');
+        $selected_month = $this->input->get('monthPicker');
 
         $data['selected_date'] = $selected_date; // Pass the selected date to the view
         $data['cafe'] = $cafe;
-        $data['transaction'] = $this->TransModel->getTransaction($selected_date);
+        $data['transaction'] = $this->TransModel->getTransaction($selected_date, $selected_month);
 
         $data['content'] = 'LaporanTransaksi';
         $this->load->view('template/index', $data);
