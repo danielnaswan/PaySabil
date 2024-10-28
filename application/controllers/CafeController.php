@@ -9,6 +9,7 @@ class CafeController extends CI_Controller
         $this->load->model('CafeModel');
         $this->load->model('TransModel');
         $this->load->model('MenuModel');
+        $this->load->library('ciqrcode');
     }
 
     function index()
@@ -75,6 +76,8 @@ class CafeController extends CI_Controller
             // Insert cafe data into PAYSABIL_CAFE
             $this->CafeModel->insertCafe($cafeData);
 
+            $this->generateQRCode($cafeData['NO_KAFE']);
+
             // Insert menu items into PAYSABIL_MENU
             foreach ($menuItems as $index => $menuItem) {
                 $menuData = [
@@ -139,5 +142,53 @@ class CafeController extends CI_Controller
         } else {
             return TRUE;
         }
+    }
+
+    function listsCafe()
+    {
+        $data['cafe'] = $this->CafeModel->getCafeList();
+
+        $data['content'] = 'QRgenerator';
+        $this->load->view('template/index', $data);
+    }
+
+    function generateQRCode($noCafe)
+    {
+        $url = site_url("PayController/pay?cafe={$noCafe}&matricno=default"); // URL for payment with cafe parameter
+        $hex_data = bin2hex($url);
+        $save_name = $hex_data . '.png';
+
+        // QR Code directory setup
+        $dir = 'assets/media/qrcode/';
+        if (!file_exists($dir)) {
+            mkdir($dir, 0775, true);
+        }
+
+        // QR configuration
+        $config['cacheable']    = true;
+        $config['imagedir']     = $dir;
+        $config['quality']      = true;
+        $config['size']         = '1024';
+        $config['black']        = array(255,255,255);
+        $config['white']        = array(255,255,255);
+        $this->ciqrcode->initialize($config);
+
+        // QR code parameters
+        $params['data']     = $url;
+        $params['level']    = 'L';
+        $params['size']     = 10;
+        $params['savename'] = FCPATH . $config['imagedir'] . $save_name;
+        $this->ciqrcode->generate($params);
+
+        // Save QR data for transaction
+        $qrData = [
+            'NO_KAFE'   => $noCafe,
+            'IMEJ_QR'    => $dir . $save_name,
+            'CREATED_AT' => date('Y-m-d H:i:s'),
+        ];
+
+        $this->CafeModel->addQRData($qrData);  // Assuming addQRData stores the QR code data
+
+        return $qrData;
     }
 }

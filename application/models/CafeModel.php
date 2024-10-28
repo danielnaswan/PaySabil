@@ -51,4 +51,13 @@ class CafeModel extends CI_Model
     {
         return 'KAFE' . time(); 
     }
+
+    function addQRData($data)
+    {
+        $this->db->where('NO_KAFE',$data['NO_KAFE']);
+        $this->db->update('PAYSABIL_CAFE', [
+            'IMEJ_QR' => $data['IMEJ_QR'],
+            'CREATED_AT' => $data['CREATED_AT']
+        ]);
+    }
 }

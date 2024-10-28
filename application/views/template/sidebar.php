@@ -76,7 +76,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url();?>">
+            <a class="nav-link" href="<?php echo base_url();?>cafeController/listsCafe">
               <i class="mdi mdi-qrcode menu-icon"></i>
               <span class="menu-title">Kod QR</span>
             </a>
