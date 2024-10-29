@@ -134,6 +134,12 @@ class CafeController extends CI_Controller
         redirect(site_url('CafeController/cafeList'));
     }
 
+    function deleteCafe($noCafe)
+    {
+        $this->CafeModel->deleteCafe($noCafe);
+        redirect(site_url('CafeController/cafeList'));
+    }
+
     function check_valid_name($str)
     {
         if (preg_match("/[']/", $str)) {
@@ -191,4 +197,13 @@ class CafeController extends CI_Controller
 
         return $qrData;
     }
+
+    public function showQRImage($noCafe)
+    {
+        // Retrieve the QR image from the model
+        $qrImage = $this->CafeModel->getQRImage($noCafe);
+
+        return $qrImage;
+    }
+
 }

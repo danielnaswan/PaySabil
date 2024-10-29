@@ -47,6 +47,23 @@ class CafeModel extends CI_Model
         else return FALSE;
     }
 
+    function deleteCafe($noCafe)
+{
+    // Check if the cafe exists
+    $this->db->where('NO_KAFE', $noCafe);
+    $query = $this->db->get('PAYSABIL_CAFE');
+
+    if ($query->num_rows() === 1) {
+        // Delete the cafe if it exists
+        $this->db->where('NO_KAFE', $noCafe);
+        return $this->db->delete('PAYSABIL_CAFE');
+    } else {
+        // Return false if no cafe is found
+        return false;
+    }
+}
+
+
     public function generateNoKafe()
     {
         return 'KAFE' . time(); 
@@ -60,4 +77,18 @@ class CafeModel extends CI_Model
             'CREATED_AT' => $data['CREATED_AT']
         ]);
     }
+
+    function getQRImage($data)
+    {
+        $this->db->select('IMEJ_QR');
+        $this->db->where('NO_KAFE', $data);
+        $query = $this->db->get('PAYSABIL_CAFE');
+    
+        if ($query->num_rows() === 1) {
+            return $query->row()->IMEJ_QR;
+        } else {
+            return null;
+        }
+    }
+    
 }

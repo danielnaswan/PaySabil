@@ -26,6 +26,9 @@
                             <button data-toggle="modal" data-target="#modalEdit" class="btn btn-primary mdi mdi-square-edit-outline">
                                 Sunting
                             </button>
+                            <a class="btn btn-danger mdi mdi-trash-can-outline" href="<?php echo base_url();?>CafeController/deleteCafe/<?php echo $cafes->NO_KAFE; ?>">
+                                Buang
+                            </a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -37,7 +40,7 @@
 <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
 
 <!-- <?php
-    $this->load->view('modal-edit');
+    // $this->load->view('modal-edit');
 ?> -->
 
 <div id="modalEdit" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
